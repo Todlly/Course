@@ -1,0 +1,11 @@
+C:\Users\furry\Documents\Coursach\TeleCompany\bin\Debug\TeleCompany.exe.config
+C:\Users\furry\Documents\Coursach\TeleCompany\bin\Debug\TeleCompany.exe
+C:\Users\furry\Documents\Coursach\TeleCompany\bin\Debug\TeleCompany.pdb
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.csprojAssemblyReference.cache
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.Properties.Resources.resources
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.csproj.GenerateResource.cache
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.exe
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.pdb
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.LoginForm.resources
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.MainMenuForm.resources
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.SubscribersTableForm.resources

@@ -15,29 +15,34 @@ namespace TeleCompany
     {
         protected OleDbDataAdapter subscribersAdapter;
         protected DataTable table = new DataTable();
+        public OleDbCommand updateCommand;
+        private OleDbConnection connection;
 
         public SubscribersTableForm(OleDbConnection connection)
         {
             InitializeComponent();
+            this.connection = connection;
             connection.Open();
             subscribersAdapter = new OleDbDataAdapter("SELECT * FROM Subscribers", connection);
             connection.Close();
-
+            subscribersAdapter.Fill(table);
+            SubscribersTableView.DataSource = table;
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            // tableAdapter.UpdateCommand = new OleDbCommandBuilder(tableAdapter).GetUpdateCommand();
-            subscribersBindingSource.EndEdit();
-            subscribersTableAdapter.Update(subscribersDataSet);
             Close();
         }
 
-        private void SubscribersTableForm_Load(object sender, EventArgs e)
+        private void updateButton_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'subscribersDataSet.Subscribers' table. You can move, or remove it, as needed.
-            this.subscribersTableAdapter.Fill(this.subscribersDataSet.Subscribers);
-
+            UpdateQuery update = new UpdateQuery(table, this);
+            update.ShowDialog();
+            updateCommand.Connection = connection;
+            connection.Open();
+            updateCommand.ExecuteNonQuery();
+            connection.Close();
+            Refresh();
         }
     }
 }

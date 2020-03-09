@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.openSubsTableButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.openRatesTableButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -45,14 +45,15 @@
             this.openSubsTableButton.UseVisualStyleBackColor = true;
             this.openSubsTableButton.Click += new System.EventHandler(this.openSubscribersTableButton_Click);
             // 
-            // button2
+            // openRatesTableButton
             // 
-            this.button2.Location = new System.Drawing.Point(148, 127);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.openRatesTableButton.Location = new System.Drawing.Point(148, 127);
+            this.openRatesTableButton.Name = "openRatesTableButton";
+            this.openRatesTableButton.Size = new System.Drawing.Size(75, 23);
+            this.openRatesTableButton.TabIndex = 1;
+            this.openRatesTableButton.Text = "Rates";
+            this.openRatesTableButton.UseVisualStyleBackColor = true;
+            this.openRatesTableButton.Click += new System.EventHandler(this.openRatesTableButton_Click);
             // 
             // button3
             // 
@@ -82,7 +83,7 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // MainMenu
+            // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,11 +91,11 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.openRatesTableButton);
             this.Controls.Add(this.openSubsTableButton);
-            this.Name = "MainMenu";
+            this.Name = "MainMenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
-            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
 
         }
@@ -102,7 +103,7 @@
         #endregion
 
         private System.Windows.Forms.Button openSubsTableButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button openRatesTableButton;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

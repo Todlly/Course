@@ -64,6 +64,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatesTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RatesTableForm.Designer.cs">
+      <DependentUpon>RatesTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubscribersDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="SubscribersTableForm.Designer.cs">
       <DependentUpon>SubscribersTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateQuery.Designer.cs">
+      <DependentUpon>UpdateQuery.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -90,8 +102,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RatesTableForm.resx">
+      <DependentUpon>RatesTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubscribersTableForm.resx">
       <DependentUpon>SubscribersTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateQuery.resx">
+      <DependentUpon>UpdateQuery.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BezuglyiSergeiCallsDataSet.xsc">
       <DependentUpon>BezuglyiSergeiCallsDataSet.xsd</DependentUpon>

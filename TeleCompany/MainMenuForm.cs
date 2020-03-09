@@ -33,14 +33,17 @@ namespace TeleCompany
         }
 
 
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void openSubscribersTableButton_Click(object sender, EventArgs e)
         {
             SubscribersTableForm form = new SubscribersTableForm(connection);
+            Hide();
+            form.ShowDialog();
+            Show();
+        }
+
+        private void openRatesTableButton_Click(object sender, EventArgs e)
+        {
+            UsersTableForm form = new UsersTableForm(connection);
             Hide();
             form.ShowDialog();
             Show();

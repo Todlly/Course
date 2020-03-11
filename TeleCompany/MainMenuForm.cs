@@ -35,7 +35,7 @@ namespace TeleCompany
 
         private void openSubscribersTableButton_Click(object sender, EventArgs e)
         {
-            SubscribersTableForm form = new SubscribersTableForm(connection);
+            TableForm form = new TableForm("Subscribers", connection);
             Hide();
             form.ShowDialog();
             Show();
@@ -43,7 +43,23 @@ namespace TeleCompany
 
         private void openRatesTableButton_Click(object sender, EventArgs e)
         {
-            UsersTableForm form = new UsersTableForm(connection);
+            TableForm form = new TableForm("Rates", connection);
+            Hide();
+            form.ShowDialog();
+            Show();
+        }
+
+        private void openCallsTableButton_Click(object sender, EventArgs e)
+        {
+            TableForm form = new TableForm("Calls", connection);
+            Hide();
+            form.ShowDialog();
+            Show();
+        }
+
+        private void openUsersTableButton_Click(object sender, EventArgs e)
+        {
+            TableForm form = new TableForm("Users", connection);
             Hide();
             form.ShowDialog();
             Show();

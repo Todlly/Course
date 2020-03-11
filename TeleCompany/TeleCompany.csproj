@@ -45,11 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BezuglyiSergeiCallsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BezuglyiSergeiCallsDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,22 +59,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RatesTableForm.cs">
+    <Compile Include="TableForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RatesTableForm.Designer.cs">
-      <DependentUpon>RatesTableForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubscribersDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SubscribersDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SubscribersTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubscribersTableForm.Designer.cs">
-      <DependentUpon>SubscribersTableForm.cs</DependentUpon>
+    <Compile Include="TableForm.Designer.cs">
+      <DependentUpon>TableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateQuery.cs">
       <SubType>Form</SubType>
@@ -102,26 +86,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RatesTableForm.resx">
-      <DependentUpon>RatesTableForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubscribersTableForm.resx">
-      <DependentUpon>SubscribersTableForm.cs</DependentUpon>
+    <EmbeddedResource Include="TableForm.resx">
+      <DependentUpon>TableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateQuery.resx">
       <DependentUpon>UpdateQuery.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BezuglyiSergeiCallsDataSet.xsc">
-      <DependentUpon>BezuglyiSergeiCallsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BezuglyiSergeiCallsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BezuglyiSergeiCallsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BezuglyiSergeiCallsDataSet.xss">
-      <DependentUpon>BezuglyiSergeiCallsDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,17 +101,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SubscribersDataSet.xsc">
-      <DependentUpon>SubscribersDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SubscribersDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SubscribersDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SubscribersDataSet.xss">
-      <DependentUpon>SubscribersDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

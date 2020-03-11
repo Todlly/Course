@@ -30,8 +30,8 @@
         {
             this.openSubsTableButton = new System.Windows.Forms.Button();
             this.openRatesTableButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.openCallsTableButton = new System.Windows.Forms.Button();
+            this.openUsersTableButton = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,23 +55,25 @@
             this.openRatesTableButton.UseVisualStyleBackColor = true;
             this.openRatesTableButton.Click += new System.EventHandler(this.openRatesTableButton_Click);
             // 
-            // button3
+            // openCallsTableButton
             // 
-            this.button3.Location = new System.Drawing.Point(148, 172);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.openCallsTableButton.Location = new System.Drawing.Point(148, 172);
+            this.openCallsTableButton.Name = "openCallsTableButton";
+            this.openCallsTableButton.Size = new System.Drawing.Size(75, 23);
+            this.openCallsTableButton.TabIndex = 2;
+            this.openCallsTableButton.Text = "Calls";
+            this.openCallsTableButton.UseVisualStyleBackColor = true;
+            this.openCallsTableButton.Click += new System.EventHandler(this.openCallsTableButton_Click);
             // 
-            // button4
+            // openUsersTableButton
             // 
-            this.button4.Location = new System.Drawing.Point(148, 213);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.openUsersTableButton.Location = new System.Drawing.Point(148, 213);
+            this.openUsersTableButton.Name = "openUsersTableButton";
+            this.openUsersTableButton.Size = new System.Drawing.Size(75, 23);
+            this.openUsersTableButton.TabIndex = 3;
+            this.openUsersTableButton.Text = "Users";
+            this.openUsersTableButton.UseVisualStyleBackColor = true;
+            this.openUsersTableButton.Click += new System.EventHandler(this.openUsersTableButton_Click);
             // 
             // button5
             // 
@@ -89,8 +91,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.openUsersTableButton);
+            this.Controls.Add(this.openCallsTableButton);
             this.Controls.Add(this.openRatesTableButton);
             this.Controls.Add(this.openSubsTableButton);
             this.Name = "MainMenuForm";
@@ -104,8 +106,8 @@
 
         private System.Windows.Forms.Button openSubsTableButton;
         private System.Windows.Forms.Button openRatesTableButton;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button openCallsTableButton;
+        private System.Windows.Forms.Button openUsersTableButton;
         private System.Windows.Forms.Button button5;
     }
 }

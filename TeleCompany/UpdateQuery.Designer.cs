@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.filterColBox = new System.Windows.Forms.ComboBox();
-            this.filterValueBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.updateButton = new System.Windows.Forms.Button();
+            this.filterValueBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // newValueBox
@@ -80,30 +80,14 @@
             this.filterColBox.Size = new System.Drawing.Size(121, 21);
             this.filterColBox.TabIndex = 5;
             // 
-            // filterValueBox
-            // 
-            this.filterValueBox.Location = new System.Drawing.Point(461, 30);
-            this.filterValueBox.Name = "filterValueBox";
-            this.filterValueBox.Size = new System.Drawing.Size(100, 20);
-            this.filterValueBox.TabIndex = 6;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(339, 14);
+            this.label3.Location = new System.Drawing.Point(342, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Filter column";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(479, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Filter value";
             // 
             // updateButton
             // 
@@ -114,6 +98,22 @@
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // filterValueBox
+            // 
+            this.filterValueBox.Location = new System.Drawing.Point(461, 30);
+            this.filterValueBox.Name = "filterValueBox";
+            this.filterValueBox.Size = new System.Drawing.Size(100, 20);
+            this.filterValueBox.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(479, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Filter value";
             // 
             // UpdateQuery
             // 
@@ -131,6 +131,7 @@
             this.Controls.Add(this.newValueBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "UpdateQuery";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateQuery";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,9 +145,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox filterColBox;
-        private System.Windows.Forms.TextBox filterValueBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.TextBox filterValueBox;
+        private System.Windows.Forms.Label label4;
     }
 }

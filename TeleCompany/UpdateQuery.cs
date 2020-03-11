@@ -13,9 +13,9 @@ namespace TeleCompany
 {
     public partial class UpdateQuery : Form
     {
-        private SubscribersTableForm parent;
+        private TableForm parent;
 
-        public UpdateQuery(DataTable table, SubscribersTableForm parent)
+        public UpdateQuery(DataTable table, TableForm parent)
         {
             InitializeComponent();
             this.parent = parent;
@@ -31,11 +31,12 @@ namespace TeleCompany
         {
             if(colBox.SelectedItem != null && filterColBox.SelectedItem != null && newValueBox.Text != null && filterValueBox.Text != null)
             {
-                parent.updateCommand = new OleDbCommand(@"UPDATE Subscribers SET @ColValue = @NewValue WHERE @Filter = @FilterValue");
-                parent.updateCommand.Parameters.AddWithValue("@ColValue", colBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("@NewValue", newValueBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("@Filter", filterColBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("@FilterValue", filterValueBox.Text);
+                parent.updateCommand = new OleDbCommand("UPDATE @Table SET @OldValue = @NewValue WHERE @Filter = @FilterValue");
+                parent.updateCommand.Parameters.AddWithValue("Table", colBox.Text);
+                parent.updateCommand.Parameters.AddWithValue("OldValue", filterColBox.Text);
+                parent.updateCommand.Parameters.AddWithValue("NewValue", newValueBox.Text);
+                parent.updateCommand.Parameters.AddWithValue("Filter", filterColBox.Text);
+                parent.updateCommand.Parameters.AddWithValue("FilterValue", filterValueBox.Text);
                 Close();
             }
         }

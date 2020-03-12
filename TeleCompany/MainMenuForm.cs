@@ -13,16 +13,19 @@ namespace TeleCompany
 {
     public partial class MainMenuForm : Form
     {
-        protected string userType;
+        public static string userType;
         private LoginForm loginForm;
         private OleDbConnection connection = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\furry\\Documents\\Coursach\\BezuglyiSergeiCalls.mdb");
 
-        public MainMenuForm(string userType, LoginForm loginForm)
+        public MainMenuForm(string sUserType, LoginForm loginForm)
         {
             InitializeComponent();
-            this.userType = userType;
+            userType = sUserType;
             this.loginForm = loginForm;
-
+            if(userType == "admin")
+            {
+                openUsersTableButton.Hide();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)

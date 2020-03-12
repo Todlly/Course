@@ -24,19 +24,19 @@ namespace TeleCompany
                 colBox.Items.Add(column.ToString());
                 filterColBox.Items.Add(column.ToString());
             }
-
         }
 
         private void updateButton_Click(object sender, EventArgs e)
         {
             if(colBox.SelectedItem != null && filterColBox.SelectedItem != null && newValueBox.Text != null && filterValueBox.Text != null)
             {
-                parent.updateCommand = new OleDbCommand("UPDATE @Table SET @OldValue = @NewValue WHERE @Filter = @FilterValue");
-                parent.updateCommand.Parameters.AddWithValue("Table", colBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("OldValue", filterColBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("NewValue", newValueBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("Filter", filterColBox.Text);
-                parent.updateCommand.Parameters.AddWithValue("FilterValue", filterValueBox.Text);
+                OleDbCommand cmd = new OleDbCommand("UPDATE " + parent.tableName + " SET ? = ? WHERE ([?] = ?)");
+                cmd.Parameters.AddWithValue("@OldValue", filterColBox.Text);
+                cmd.Parameters.AddWithValue("@NewValue", newValueBox.Text);
+                cmd.Parameters.AddWithValue("@Filter", filterColBox.Text);
+                cmd.Parameters.AddWithValue("@FilterValue", filterValueBox.Text);
+
+                parent.updateCommand = cmd;
                 Close();
             }
         }

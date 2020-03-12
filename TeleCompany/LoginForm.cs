@@ -71,8 +71,8 @@ namespace TeleCompany
 
         private void button1_Click(object sender, EventArgs e)
         {
-            loginField.Text = "admin";
-            pswdField.Text = "admin";
+            loginField.Text = "god";
+            pswdField.Text = "4321";
         }
     }
 }

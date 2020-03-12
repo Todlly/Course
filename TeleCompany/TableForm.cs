@@ -18,7 +18,8 @@ namespace TeleCompany
         protected OleDbConnection connection;
         public string tableName;
         public OleDbCommand updateCommand = new OleDbCommand();
-            
+        public OleDbCommand insertCommand = new OleDbCommand();
+
         public TableForm(string tableName, OleDbConnection connection)
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace TeleCompany
             connection.Open();
             adapter = new OleDbDataAdapter("SELECT * FROM " + tableName, connection);
             connection.Close();
+            table.Clear();
             adapter.Fill(table);
             tableView.DataSource = table;
             Refresh();
@@ -49,10 +51,50 @@ namespace TeleCompany
             update.ShowDialog();
             connection.Open();
             updateCommand.Connection = connection;
-            adapter.UpdateCommand = updateCommand;
-            adapter.UpdateCommand.ExecuteNonQuery();
+            updateCommand.ExecuteNonQuery();
             connection.Close();
             UpdateTable();
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            switch (tableName)
+            {
+                case "Users":
+                    AddUserForm formU = new AddUserForm(this);
+                    formU.ShowDialog();
+                    break;
+                case "Rates":
+                    AddRateForm formR = new AddRateForm(this);
+                    formR.ShowDialog();
+                    break;
+                case "Calls":
+                    AddCallForm formC = new AddCallForm(this);
+                    formC.ShowDialog();
+                    break;
+                case "Subscriber":
+                    AddSubscriberForm formS = new AddSubscriberForm(this);
+                    formS.ShowDialog();
+                    break;
+
+            }
+
+
+            if (insertCommand.CommandText != string.Empty)
+            {
+                insertCommand.Connection = connection;
+                connection.Open();
+                try
+                {
+                    insertCommand.ExecuteNonQuery();
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                connection.Close();
+                UpdateTable();
+                insertCommand.CommandText = string.Empty;
+            }
         }
     }
 }

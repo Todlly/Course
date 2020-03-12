@@ -45,6 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCallForm.Designer.cs">
+      <DependentUpon>AddCallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRateForm.Designer.cs">
+      <DependentUpon>AddRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubscriberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubscriberForm.Designer.cs">
+      <DependentUpon>AddSubscriberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +95,15 @@
     <Compile Include="UpdateQuery.Designer.cs">
       <DependentUpon>UpdateQuery.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCallForm.resx">
+      <DependentUpon>AddCallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRateForm.resx">
+      <DependentUpon>AddRateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

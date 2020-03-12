@@ -37,7 +37,7 @@
             // 
             // openSubsTableButton
             // 
-            this.openSubsTableButton.Location = new System.Drawing.Point(148, 73);
+            this.openSubsTableButton.Location = new System.Drawing.Point(12, 15);
             this.openSubsTableButton.Name = "openSubsTableButton";
             this.openSubsTableButton.Size = new System.Drawing.Size(75, 34);
             this.openSubsTableButton.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // openRatesTableButton
             // 
-            this.openRatesTableButton.Location = new System.Drawing.Point(148, 127);
+            this.openRatesTableButton.Location = new System.Drawing.Point(12, 69);
             this.openRatesTableButton.Name = "openRatesTableButton";
             this.openRatesTableButton.Size = new System.Drawing.Size(75, 23);
             this.openRatesTableButton.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // openCallsTableButton
             // 
-            this.openCallsTableButton.Location = new System.Drawing.Point(148, 172);
+            this.openCallsTableButton.Location = new System.Drawing.Point(12, 114);
             this.openCallsTableButton.Name = "openCallsTableButton";
             this.openCallsTableButton.Size = new System.Drawing.Size(75, 23);
             this.openCallsTableButton.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // openUsersTableButton
             // 
-            this.openUsersTableButton.Location = new System.Drawing.Point(148, 213);
+            this.openUsersTableButton.Location = new System.Drawing.Point(12, 155);
             this.openUsersTableButton.Name = "openUsersTableButton";
             this.openUsersTableButton.Size = new System.Drawing.Size(75, 23);
             this.openUsersTableButton.TabIndex = 3;
@@ -77,11 +77,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(417, 249);
+            this.button5.Location = new System.Drawing.Point(127, 155);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Log off";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(227, 230);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.openUsersTableButton);
             this.Controls.Add(this.openCallsTableButton);

@@ -10,3 +10,6 @@ C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.LoginForm.re
 C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.MainMenuForm.resources
 C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.UpdateQuery.resources
 C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.TableForm.resources
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.AddUserForm.resources
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.AddRateForm.resources
+C:\Users\furry\Documents\Coursach\TeleCompany\obj\Debug\TeleCompany.AddCallForm.resources

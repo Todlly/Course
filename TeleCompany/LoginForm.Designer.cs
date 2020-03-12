@@ -57,6 +57,7 @@
             // 
             this.pswdField.Location = new System.Drawing.Point(197, 156);
             this.pswdField.Name = "pswdField";
+            this.pswdField.PasswordChar = '*';
             this.pswdField.Size = new System.Drawing.Size(100, 20);
             this.pswdField.TabIndex = 2;
             // 

@@ -32,7 +32,11 @@ namespace TeleCompany
                 }
             }
 
-            if (!int.TryParse(cityCodeBox.Text, out int cityCode) || !double.TryParse(localRateBox.Text, out double localRate) || !double.TryParse(longRateBox.Text, out double longRate))
+            int cityCode = new int();
+            double localRate = new double();
+            double longRate = new double();
+
+            if (!int.TryParse(cityCodeBox.Text, out cityCode) || !double.TryParse(localRateBox.Text, out localRate) || !double.TryParse(longRateBox.Text, out longRate))
                 return;
 
             string cityName = cityNameBox.Text;

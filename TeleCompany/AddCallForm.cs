@@ -32,12 +32,13 @@ namespace TeleCompany
                 }
             }
 
+            int subID = new int();
             DataSetDateTime date = new DataSetDateTime();
             int cityCode = new int();
             int duration = new int();
             int phone = new int();
 
-            if (!int.TryParse(subIDBox.Text, out int subID) || !DataSetDateTime.TryParse(dateBox.Text, out date) || !int.TryParse(cityCodeBox.Text, out cityCode)
+            if (!int.TryParse(subIDBox.Text, out subID) || !DataSetDateTime.TryParse(dateBox.Text, out date) || !int.TryParse(cityCodeBox.Text, out cityCode)
                 || !int.TryParse(durationBox.Text, out duration) || !int.TryParse(phoneNumberBox.Text, out phone))
                 return;
 
